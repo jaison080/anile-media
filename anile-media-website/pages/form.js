@@ -1,4 +1,4 @@
-import { TextField,InputLabel,Select,MenuItem, FormLabel, RadioGroup, FormControlLabel, Radio, Modal } from "@mui/material";
+import { TextField,InputLabel,Select,MenuItem, FormLabel, RadioGroup, FormControlLabel, Radio, Modal, FormControl, OutlinedInput } from "@mui/material";
 import { Box } from "@mui/system";
 
 import { useRouter } from "next/router";
@@ -11,7 +11,6 @@ const style = {
   width: 400,
   p: 4,
 };
-
 function form()
 {
  const router = useRouter();
@@ -19,6 +18,12 @@ function form()
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const handleClick = () => router.push('./form');
+    const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
     return(
         <div className='container'>
             <div className="title">Let's Work Together</div>
@@ -54,8 +59,111 @@ function form()
             </div>
             <TextField className="outlined-basic-3" label="Company/Organization" variant="outlined" />
             </div>
+            <FormControl sx={{width:'800px',marginTop:'20px'}}>
+        <InputLabel id="demo-multiple-name-label">How did you hear about us?</InputLabel>
+        <Select
+          labelId="demo-multiple-name-label"
+          id="demo-multiple-name"
+          value={age}
+          onChange={handleChange}
+          input={<OutlinedInput label="How did you hear about us?" />}
+        >
+            
+            <MenuItem
+              key='1'
+              value='1'
+            >
+              Google
+            </MenuItem>
+
+            <MenuItem
+              key='2'
+              value='2'
+            >
+              Referral
+            </MenuItem>
+
+            <MenuItem
+              key='3'
+              value='3'
+            >
+              Billboard
+            </MenuItem>
+            <MenuItem
+              key='0'
+              value='0'
+            >
+              None
+            </MenuItem>
+        </Select>
+      </FormControl>
             <div className="form">
             <div className="form-title">PROJECT DETAILS</div>
+            <FormControl sx={{width:'800px',marginTop:'20px'}}>
+        <InputLabel id="demo-multiple-name-label">How would you like to work with us?</InputLabel>
+        <Select
+          labelId="demo-multiple-name-label"
+          id="demo-multiple-name"
+          value={age}
+          onChange={handleChange}
+          input={<OutlinedInput label="How would you like to work with us?" />}
+        >
+            
+            <MenuItem
+              key='1'
+              value='1'
+            >
+              Web Design & Development
+
+            </MenuItem>
+
+            <MenuItem
+              key='2'
+              value='2'
+            >
+              Branding & Identity
+
+            </MenuItem>
+
+            <MenuItem
+              key='3'
+              value='3'
+            >
+              Digital Marketing
+
+            </MenuItem>
+            <MenuItem
+              key='4'
+              value='4'
+            >
+              Custom Web/Mobile App Development
+
+
+            </MenuItem>
+            <MenuItem
+              key='5'
+              value='5'
+            >
+              Strategy & Consulting
+
+            </MenuItem>
+            <MenuItem
+              key='6'
+              value='6'
+            >
+              Ongoing Support
+
+
+            </MenuItem>
+
+            <MenuItem
+              key='0'
+              value='0'
+            >
+              None
+            </MenuItem>
+        </Select>
+      </FormControl>
              <FormLabel className="radio-label">What's your budget ?</FormLabel>
       <RadioGroup
         row
