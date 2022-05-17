@@ -58,6 +58,8 @@ display: flex;
   overflow-wrap: break-word;
   display: flex;
   align-items: center;
+  padding-left: 20px;
+    padding-right: 20px;
   align-content: center;
   justify-content: center;
   font-family: var(--primary-font);
@@ -114,6 +116,10 @@ display: flex;
 font-family: var(--primary-font);
   font-weight: 800;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+    padding-right: 20px;
   color: black;
 }
 .outlined-basic{

@@ -173,7 +173,7 @@ function form()
         <FormControlLabel value="female"  control={<Radio />} label="$20k-40k" />
         <FormControlLabel value="male" control={<Radio />} label="$40k-60k" />
         <FormControlLabel value="other" control={<Radio />} label="$60k-80k" />
-         <FormControlLabel value="other" control={<Radio />} label="$100k +" />
+         <FormControlLabel value="other1" control={<Radio />} label="$100k +" />
       </RadioGroup>
       <FormLabel className="radio-label-1">Project Details</FormLabel>
       <TextField
