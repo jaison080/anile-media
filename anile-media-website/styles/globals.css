@@ -1,35 +1,199 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* VARIABLES */
+:root {
+  --primary-font: 'Raleway', sans-serif;
+  --secondary-font: 'Work Sans';
+  --tertiary-font: 'Poppins';
+  --bg-color: #E6F4F4;
+  --primary-color: #0B8B8B;
+  --secondary-color: #3c9b9b;
+  --tertiary-color: #044d4d;
+  --text-card: #FFFFFF;
+  --text-main: #333333;
 }
-
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
-
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:100px;
+  padding-bottom: 40px;
+}
+.title{
+display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 82px;
+  letter-spacing: -0.02em;
+  align-items: center;
+}
+.description{
+  overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: var(--primary-font);
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 200;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.description1 {
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+  font-weight: 200;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+.tabs{
+  margin-top: 20px;
+}
+.button_active{
+  height: 60px;
+  width: 150px;
+  background-color: #85CB33;
+  border:none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+.button {
+  height: 60px;
+  width: 150px;
+  background-color: #FFFFFF;
+  border: gray 1px solid;
+  cursor: pointer;
+  font-weight: 700;
+  color: #333333;
+  font-family: var(--primary-font);
+}
+.button:hover{
+  background-color: gray;
+}
+.or{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: var(--primary-font);
+  font-weight: 800;
+  font-size: 12px;
+  color: gray;
+
+}
+.form{
+  margin-top:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.form-title
+{
+font-family: var(--primary-font);
+  font-weight: 800;
+  font-size: 15px;
+  color: black;
+}
+.outlined-basic{
+  margin-top: 30px;
+  font-family: var(--primary-font);
+  width:800px;
+}
+.form-1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.outlined-basic-1 {
+  width: 400px;
+  padding-right: 10px;
+  font-family: var(--primary-font);
+}
+.outlined-basic-2 {
+  width: 400px;
+  font-family: var(--primary-font);
+}
+.outlined-basic-3 {
+  margin-top: 20px;
+    width: 800px;
+    font-family: var(--primary-font);
+}
+.radio-label{
+  margin-top: 20px;
+  font-family: var(--primary-font);
+}
+.radio-label-1 {
+  margin-top: 20px;
+  font-family: var(--primary-font);
+}
+input[type="file" ]
+{
+  display: none;
+}
+.input{
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 40px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border: #85CB33 1px solid;
+    color: #85CB33;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+.input:hover
+{
+  background-color: #85CB33;
+    color: #fff;
+}
+.submit{
+  height: 40px;
+    margin-top: 30px;
+    border-radius: 40px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border: #85CB33 1px solid;
+    color: #85CB33;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+.submit:hover {
+  background-color: #85CB33;
+  color: #fff;
 }
