@@ -70,7 +70,7 @@ const [age1, setAge1] = React.useState('');
           <Typography  className="form-title">
             BASIC INFORMATION
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box component="form1" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
               <Grid item xs={10}>
                 <TextField
@@ -169,7 +169,7 @@ const [age1, setAge1] = React.useState('');
           <Typography  className="form-title">
             PROJECT DETAILS
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ fontFamily:'Raleway',mt: 3 }}>
+          <Box component="form2" noValidate onSubmit={handleSubmit} sx={{ fontFamily:'Raleway',mt: 3 }}>
             <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
                <Grid item xs={10} >
                 <FormControl fullWidth>
@@ -274,7 +274,7 @@ const [age1, setAge1] = React.useState('');
             </Grid>
             </Box>
             </Box>
-        <FormLabel className="radio-label-1">Upload RFP</FormLabel>
+        <FormLabel className="input-label">Upload RFP</FormLabel>
         <label className="input">SELECT FILES
          <input type="file" className="file-upload" name="filename"></input>
          </label>
