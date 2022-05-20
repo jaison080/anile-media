@@ -17,7 +17,13 @@ const create = () => {
   <div className="quill">
     <div className="add-title">Add Blog</div>
       
-          <div className='editor>'>
+          <div className='editor'>
+            <div className='blog-title'><input
+      id="title"
+      className='blog-title-input'
+      placeholder="Enter a Title.."
+    ></input></div>
+            
               <QuillNoSSRWrapper modules={create.modules} onChange={handleBody} formats={create.formats} value={body} theme="snow" />
               </div>
               <div className='btn-post'>
