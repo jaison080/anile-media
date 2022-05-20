@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
 import React from'react'
 import axios from 'axios';
+import { createRouteLoader } from "next/dist/client/route-loader";
 
 const style = {
   position: 'absolute',
@@ -43,6 +44,8 @@ export default function form()
     if(res.status == 200)
     {
       console.log("Success!");
+      alert('Form submitted succesfully !!')
+      window.location.reload()
     }
     else
     {
