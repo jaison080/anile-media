@@ -20,17 +20,19 @@
   --text-card: #FFFFFF;
   --text-main: #333333;
 }
+
 .container {
   display: flex;
   font-family: var(--primary-font) !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:100px;
+  margin-top: 100px;
   padding-bottom: 40px;
 }
-.title{
-display: flex;
+
+.title {
+  display: flex;
   justify-content: center;
   text-align: center;
   font-family: var(--primary-font);
@@ -40,27 +42,29 @@ display: flex;
   letter-spacing: -0.02em;
   align-items: center;
 }
-.description{
+
+.description {
   overflow-wrap: break-word;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-family: var(--primary-font);
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 200;
-    line-height: 40px;
-    font-size: 18px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 200;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
 }
+
 .description1 {
   overflow-wrap: break-word;
   display: flex;
   align-items: center;
   padding-left: 20px;
-    padding-right: 20px;
+  padding-right: 20px;
   align-content: center;
   justify-content: center;
   font-family: var(--primary-font);
@@ -69,19 +73,22 @@ display: flex;
   font-size: 18px;
   text-align: center;
 }
-.tabs{
+
+.tabs {
   margin-top: 20px;
 }
-.button_active{
+
+.button_active {
   height: 60px;
   width: 150px;
   background-color: #85CB33;
-  border:none;
+  border: none;
   color: #FFFFFF;
   cursor: pointer;
   font-weight: 700;
   font-family: var(--primary-font);
 }
+
 .button {
   height: 60px;
   width: 150px;
@@ -92,10 +99,12 @@ display: flex;
   color: #333333;
   font-family: var(--primary-font);
 }
-.button:hover{
+
+.button:hover {
   background-color: gray;
 }
-.or{
+
+.or {
   padding-left: 20px;
   padding-right: 20px;
   font-family: var(--primary-font);
@@ -104,65 +113,98 @@ display: flex;
   color: gray;
 
 }
-.form-title
-{
-font-family: var(--primary-font);
+
+.form-title {
+  font-family: var(--primary-font);
   font-weight: 800 !important;
   font-size: 15px;
   display: flex;
   justify-content: center;
   padding-left: 20px;
-    padding-right: 20px;
+  padding-right: 20px;
   color: black;
 }
+
 .input-label {
   margin-top: 20px;
   font-family: var(--primary-font);
 }
-input[type="file" ]
-{
+
+input[type="file"] {
   display: none;
 }
-.input{
+
+.input {
   height: 60px;
   margin-top: 10px;
   border-radius: 40px;
-    width: 180px;
-    background-color: #FFFFFF;
-    border: #85CB33 1px solid;
-    color: #85CB33;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: var(--primary-font);
+  width: 180px;
+  background-color: #FFFFFF;
+  border: #85CB33 1px solid;
+  color: #85CB33;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--primary-font);
 }
-.input:hover
-{
+
+.input:hover {
   background-color: #85CB33;
-    color: #fff;
+  color: #fff;
 }
-.submit{
+
+.submit {
   height: 40px;
-    margin-top: 30px;
+  margin-top: 30px;
+  border-radius: 40px;
+  width: 100px;
+  background-color: #FFFFFF;
+  border: #85CB33 1px solid;
+  color: #85CB33;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--primary-font);
+}
+
+.submit:hover {
+  background-color: #85CB33;
+  color: #fff;
+}
+
+.btn{
+  height: 40px;
     border-radius: 40px;
     width: 100px;
     background-color: #FFFFFF;
     border: #85CB33 1px solid;
     color: #85CB33;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     font-weight: 700;
     font-size: 15px;
     font-family: var(--primary-font);
 }
-.submit:hover {
+.btn-post {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  height: 30px;
+  border-radius: 40px;
+  width: 100px;
+  float: right;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--primary-font);
+}
+.btn:hover {
   background-color: #85CB33;
   color: #fff;
 }

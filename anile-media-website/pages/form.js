@@ -3,6 +3,7 @@ import { Box, flexbox } from "@mui/system";
 import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
 import React from'react'
+
 const style = {
   position: 'absolute',
   top: '50%',
