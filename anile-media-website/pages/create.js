@@ -1,11 +1,31 @@
 import 'react-quill/dist/quill.snow.css'
 import dynamic from 'next/dynamic'
+import React from 'react'
 const QuillNoSSRWrapper = dynamic(import('react-quill'), {
   ssr: false,
   loading: () => <p>Loading ...</p>,
 })
 
-const modules = {
+
+const create = () => {
+    const [body, setBody] = React.useState('');
+    const handleBody = (e) => {
+        console.log(e)
+        setBody(e)
+    }
+    return (
+  <div className="quill">
+    <div className="add-title">Add Blog</div>
+      
+          <div className='editor>'>
+              <QuillNoSSRWrapper modules={create.modules} onChange={handleBody} formats={create.formats} value={body} theme="snow" />
+              </div>
+              <div className='btn-post'>
+          <button className='btn'>POST</button>
+          </div>
+              </div>);
+}
+create.modules = {
   toolbar: [
     [{ header: '1' }, { header: '2' }, { font: [] }],
     [{ size: [] }],
@@ -28,7 +48,7 @@ const modules = {
  * Quill editor formats
  * See https://quilljs.com/docs/formats/
  */
-const formats = [
+create.formats = [
   'header',
   'font',
   'size',
@@ -44,14 +64,4 @@ const formats = [
   'image',
   'video',
 ]
-export default function addBlog() {
-  return (
-  <div className="quill">
-      <div className='btn-post'>
-          <button className='btn'>POST</button>
-          </div>
-          <div className='editor>'>
-              <QuillNoSSRWrapper modules={modules} formats={formats} theme="snow" />
-              </div>
-              </div>);
-}
+export default create
