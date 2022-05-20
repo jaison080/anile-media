@@ -3,6 +3,7 @@ import { Box, flexbox } from "@mui/system";
 import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
 import React from'react'
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -173,14 +174,14 @@ const [age1, setAge1] = React.useState('');
             <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
                <Grid item xs={10} >
                 <FormControl fullWidth>
-                <InputLabel sx={{ fontFamily:'Raleway'}} id="demo-multiple-name-label">How would you like to work with us?</InputLabel>
+                <InputLabel sx={{ fontFamily:'Raleway'}} id="demo-multiple-name-label">How do you like to work with us?</InputLabel>
          <Select
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
           value={age1}
           sx={{ fontFamily:'Raleway'}}
           onChange={handleChange1}
-          input={<OutlinedInput label="How would you like to work with us?" />}
+          input={<OutlinedInput label="How do you like to work with us?" />}
         >
             
             <MenuItem
