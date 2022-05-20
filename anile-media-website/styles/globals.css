@@ -123,8 +123,8 @@
   padding-left: 20px;
   padding-right: 20px;
   color: black;
-  margin-bottom:10px;
-  margin-top:10px;
+  margin-bottom:10px !important;
+  margin-top:10px !important;
 }
 .form-title-1 {
   font-family: var(--primary-font);
