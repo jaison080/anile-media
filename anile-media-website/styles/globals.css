@@ -239,18 +239,11 @@ input[type="file"] {
 }
 .blog-title
 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1%;
-    
-}
-.blog-title-input{
-  font-family: var(--primary-font);
-    font-weight: 450;
-    font-size: 20px;
-    padding:10px;
-    letter-spacing: -0.02em;
-    border: gray 1px solid;
-    margin: 5px;
+  margin-bottom: 1% !important;
+  font-family: var(--primary-font) !important;
+    font-weight: 450 !important;
+    font-size: 20px !important;
+    letter-spacing: -0.02em !important;
     width: 100%;
+    
 }
