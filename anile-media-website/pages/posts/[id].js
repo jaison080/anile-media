@@ -27,6 +27,7 @@ return (
     
     <Container maxWidth="lg" fixed>
     <h1>{post.title}</h1>
+    <h2>{post.author}</h2>
     <div dangerouslySetInnerHTML={{__html:post.content}} />
     </Container>
   </div>

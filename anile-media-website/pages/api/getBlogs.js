@@ -32,6 +32,7 @@ export default async (req, res) => {
             data.forEach(doc => {
                 const blog = new Blog(
                     doc.id,
+                    doc.data().author,
                     doc.data().title,
                     doc.data().content
                 );

@@ -28,11 +28,22 @@ const  create  = () => {
     const handleTitleFieldChange=function(e) {
         settitleValue(e.target.value)
     }
+    const authorRef = useRef(null);
+    const handleAuthorFieldChange=function(e) {
+        setauthorValue(e.target.value)
+    }
+    const d = new Date();
     const [value, setValue] =  useState("");
     const [titleValue, settitleValue] =  useState("");
+    const [authorValue, setauthorValue] =  useState("");
     async function uploadPost(event){
         event.preventDefault();
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    let createdAt = `${d.getHours()}:${d.getMinutes()}  ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+    
         let data = {
+          author:authorValue,
+          createdAt:createdAt,
          title:titleValue,
           content:value
         };
@@ -68,6 +79,12 @@ const  create  = () => {
           value={titleValue} onChange={handleTitleFieldChange}
           ref={titleRef}
           placeholder="Enter a Title.."/>
+          <TextField className='blog-title'
+          name="author"
+          type="text"
+          value={authorValue} onChange={handleAuthorFieldChange}
+          ref={authorRef}
+          placeholder="Name of Author"/>
         <ReactQuill  modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
         <div className='btn-post'>
           <button className='btn' type="submit" onClick={uploadPost}>POST</button>
