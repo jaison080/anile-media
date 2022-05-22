@@ -2,7 +2,8 @@ import { Box, TextField } from "@mui/material";
 import dynamic from "next/dynamic";
 import { useRef, useState } from  "react";
 import  "react-quill/dist/quill.snow.css";
-import axios from 'axios'
+import axios from 'axios';
+import Router from 'next/router';
 const ReactQuill=dynamic(import('react-quill'),{
     ssr:false,
     loading:()=><p>Loading....</p>
@@ -43,11 +44,12 @@ const  create  = () => {
           }
         });
         console.log(res);
+        const docId = res.data;
         if(res.status == 200)
         {
           console.log("Success!");
           alert('Blog uploaded succesfully !!')
-          window.location.reload()
+          Router.push(`/posts/${docId}`);
         }
         else
         {
