@@ -247,3 +247,35 @@ input[type="file"] {
     width: 100%;
     
 }
+h1
+{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    align-items: center;
+    margin-top: 65px;
+}
+h2{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  p{
+    display: flex;
+      font-family: var(--primary-font);
+      font-size: 17px;
+      line-height: 25px;
+      line-height: 40px;
+  }
