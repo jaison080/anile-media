@@ -279,3 +279,13 @@ h2{
       line-height: 25px;
       line-height: 40px;
   }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    .box-add{
+      margin:20px
+    }
