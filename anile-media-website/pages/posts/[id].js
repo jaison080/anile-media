@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol , MDBContainer} from 'mdb-react-ui-kit';
 import Container from '@mui/material/Container';
+import Head from 'next/head';
 export default function Post() {
 const [post, setPost] = useState('');
 const router = useRouter();
@@ -23,6 +24,12 @@ useEffect(()=>{
 },[id]); 
 
 return (
+  <div>
+      <Head>
+        <title>Anile Media | Posts</title>
+      </Head>
+     
+      <main>
   <div className='postspage'>
     
     <Container maxWidth="lg" fixed>
@@ -30,6 +37,8 @@ return (
     <h2>{post.author}</h2>
     <div dangerouslySetInnerHTML={{__html:post.content}} />
     </Container>
+  </div>
+  </main>
   </div>
 )
 }

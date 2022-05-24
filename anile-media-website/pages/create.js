@@ -4,6 +4,7 @@ import { useRef, useState } from  "react";
 import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Router from 'next/router';
+import Head from "next/head";
 const ReactQuill=dynamic(import('react-quill'),{
     ssr:false,
     loading:()=><p>Loading....</p>
@@ -67,6 +68,13 @@ const  create  = () => {
       };
 
     return  (
+       <div>
+      <Head>
+        <title>Anile Media | Create Blog</title>
+      </Head>
+     
+      <main>
+        
         <div className="quill">
         <div className="add-title">Add Blog</div>
           
@@ -88,6 +96,8 @@ const  create  = () => {
           <button className='btn' type="submit" onClick={uploadPost}>POST</button>
           </div>
           </Box>
+              </div>
+              </main>
               </div>);
 };
 

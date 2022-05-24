@@ -65,10 +65,6 @@ export default function HomeCard(props) {
       {props.loading ? (
         <Card >
              <Skeleton variant="rectangular" height={140} />
-             <CardContent >
-             <Typography ><Skeleton /></Typography>
-             <Typography ><Skeleton /></Typography>
-             </CardContent>
 
         </Card>
       ):

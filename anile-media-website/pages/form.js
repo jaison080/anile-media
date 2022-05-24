@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
 import React from'react'
 import axios from 'axios';
+import Head from "next/head";
 const style = {
   position: 'absolute',
   top: '50%',
@@ -71,7 +72,12 @@ const [age1, setAge1] = React.useState('');
 const [progresspercent, setProgresspercent] = React.useState(0);
 
     return(
-        <div className='container'>
+      <div>
+      <Head>
+        <title>Anile Media | Form</title>
+      </Head>
+      <main>
+        <div className="container">
             <div className="title">Let's Work Together</div>
             <div className="description">By leveraging our full spectrum strategy, design, and technology capabilities, we deliver game-changing outcomes for our clients around the world.</div>
             <br/>
@@ -311,6 +317,9 @@ const [progresspercent, setProgresspercent] = React.useState(0);
               className="submit"
             >SEND</button>
             </Box>
+          </div>
+            </main>
             </div>
+              
     );
         }
