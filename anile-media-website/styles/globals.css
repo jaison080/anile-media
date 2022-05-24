@@ -222,18 +222,18 @@ input[type="file"] {
 }
 
 .appbar{
-  background: #fff;;
-  box-shadow: none;
+  background: #fff !important;
+  box-shadow: none !important;
 }
 
 .company-button{
-  color:#85CB33;
-  font-weight: 700;
-    font-size: 14px;
-    font-family: var(--primary-font);
+  color:#85CB33 !important;
+  font-weight: 700 !important;
+    font-size: 14px !important;
+    font-family: var(--primary-font) !important;
 }
 .company{
-  font-family: var(--primary-font);
+  font-family: var(--primary-font) !important;
 }
 .submit:hover {
   background-color: #85CB33;
