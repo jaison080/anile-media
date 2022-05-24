@@ -4,6 +4,7 @@ import axios from 'axios';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol , MDBContainer} from 'mdb-react-ui-kit';
 import Container from '@mui/material/Container';
 import Head from 'next/head';
+import Navbar from 'components/Navbar';
 export default function Post() {
 const [post, setPost] = useState('');
 const router = useRouter();
@@ -28,7 +29,7 @@ return (
       <Head>
         <title>Anile Media | Posts</title>
       </Head>
-     
+     <Navbar/>
       <main>
   <div className='postspage'>
     

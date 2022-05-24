@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useRouter} from "next/router";
 import HomeCard from '../../components/card';
 import Head from "next/head";
-
+import Navbar from "components/Navbar";
 export default function feed(){
   const router = useRouter();
     const [posts,setPosts]= useState([0,0,0,0,0,0]);
@@ -32,7 +32,7 @@ return(
       <Head>
         <title>Anile Media | Blogs</title>
       </Head>
-     
+     <Navbar/>
       <main>
     <div className="container">
       <div className="title">Blogs</div>

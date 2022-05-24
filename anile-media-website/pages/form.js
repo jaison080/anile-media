@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import React from'react'
 import axios from 'axios';
 import Head from "next/head";
+import Navbar from '../components/Navbar'
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -68,14 +70,12 @@ const [age1, setAge1] = React.useState('');
     setAge1(event.target.value);
   };
 
-     const [imgUrl, setImgUrl] = React.useState(null);
-const [progresspercent, setProgresspercent] = React.useState(0);
-
     return(
       <div>
       <Head>
         <title>Anile Media | Form</title>
       </Head>
+      <Navbar/>
       <main>
         <div className="container">
             <div className="title">Let's Work Together</div>

@@ -5,6 +5,7 @@ import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Router from 'next/router';
 import Head from "next/head";
+import Navbar from "components/Navbar";
 const ReactQuill=dynamic(import('react-quill'),{
     ssr:false,
     loading:()=><p>Loading....</p>
@@ -72,7 +73,7 @@ const  create  = () => {
       <Head>
         <title>Anile Media | Create Blog</title>
       </Head>
-     
+     <Navbar/>
       <main>
         
         <div className="quill">
