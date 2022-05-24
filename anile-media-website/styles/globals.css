@@ -215,9 +215,9 @@ input[type="file"] {
   font-family: var(--primary-font);
 }
 .box-1{
-  justify-content: space-around;
-  padding-top: 0.4%;
-  align-content: center;
+  justify-content: space-around !important;
+  padding-top: 0.4% !important;
+  align-content: center !important;
  
 }
 
