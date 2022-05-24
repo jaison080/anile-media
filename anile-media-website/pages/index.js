@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import {useRouter } from 'next/router'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   const Router=useRouter();
@@ -15,11 +16,14 @@ export default function Home() {
     Router.push('/blogs')
   }
   return (
-    <div className='container'>
+    <div>
       <Head>
         <title>Anile Media</title>
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
+       <Navbar/>
+    
       <main>
         <div className='container'>
         <div className='title'>ANILE MEDIA</div>
@@ -32,6 +36,6 @@ export default function Home() {
         <button className='button_active' onClick={blogsPage}>VIEW BLOGS</button>
         </div>
 </main>
-      </div>
+</div>
   )
 }
