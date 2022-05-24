@@ -4,8 +4,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
 import React from'react'
 import axios from 'axios';
-import { createRouteLoader } from "next/dist/client/route-loader";
-
 const style = {
   position: 'absolute',
   top: '50%',
@@ -20,7 +18,9 @@ const style = {
 
 export default function form()
 {
+  
    async function submitForm(event){
+     
     event.preventDefault();
     let data = new FormData(event.currentTarget);
     let userData={
@@ -32,6 +32,7 @@ export default function form()
       work:data.get('work'),
       budget:data.get('budget'),
       details:data.get('details'),
+
     };
     console.log(JSON.stringify(userData));
     const res = await axios.post('/api/form', JSON.stringify(userData), {
@@ -65,6 +66,9 @@ const [age1, setAge1] = React.useState('');
   const handleChange1 = (event) => {
     setAge1(event.target.value);
   };
+
+     const [imgUrl, setImgUrl] = React.useState(null);
+const [progresspercent, setProgresspercent] = React.useState(0);
 
     return(
         <div className='container'>
