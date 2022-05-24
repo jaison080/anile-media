@@ -99,7 +99,7 @@ const style = {
           </Box>
 
          <Box sx={{ flexGrow: 0 , background:'none'}}>
-             <Button className='company-button' onClick={handleOpen}>CONTACT US</Button>
+             <Button className='company-button-1' onClick={handleOpen}>CONTACT US</Button>
              <Modal
         open={open}
         onClose={handleClose}
