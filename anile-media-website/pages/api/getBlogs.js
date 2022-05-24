@@ -1,7 +1,7 @@
 import {collection} from 'firebase/firestore'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore ,addDoc} from "firebase/firestore"
+import { getFirestore ,getDocs} from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,8 +23,7 @@ import Blog from '../../utils/models/blogmodel';
 
 export default async (req, res) => {
     try {
-        const blogs = await db.collection('blogs');
-        const data = await blogs.get();
+        const data=await getDocs(collection(db, 'blogs'))
         const blogsArray = [];
         if(data.empty) {
             res.status(404).send('No student record found');
@@ -32,9 +31,9 @@ export default async (req, res) => {
             data.forEach(doc => {
                 const blog = new Blog(
                     doc.id,
-                    doc.data().author,
                     doc.data().title,
-                    doc.data().content
+                    doc.data().content,
+                    doc.data().author,
                 );
                 blogsArray.push(blog);
             });
