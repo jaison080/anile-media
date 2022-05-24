@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import axios from 'axios';
 import {useRouter} from "next/router";
 import HomeCard from '../../components/card';
+import Head from "next/head";
 
 export default function feed(){
   const router = useRouter();
@@ -27,6 +28,12 @@ export default function feed(){
 
 
 return(
+  <div>
+      <Head>
+        <title>Anile Media | Blogs</title>
+      </Head>
+     
+      <main>
     <div className="container">
       <div className="title">Blogs</div>
     <br/>
@@ -41,6 +48,8 @@ return(
 
     ))}
         
+    </div>
+    </main>
     </div>
 )
 
