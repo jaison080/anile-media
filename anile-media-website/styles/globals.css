@@ -355,7 +355,7 @@ h2{
                     display: none;
                   }
                   .company-button-1 {
-                      display: none;
+                      display: none !important;
                   }
                   .box-2{
                     flex-grow: 0;
