@@ -1,20 +1,8 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import {useRouter } from 'next/router'
 import Navbar from '../components/Navbar'
-
+import Landing from 'components/Landing'
+import Experiences from 'components/Experiences'
 export default function Home() {
-  const Router=useRouter();
-  function formPage(){
-    Router.push('/form')
-  }
-  function createPage(){
-    Router.push('/create')
-  }
-  function blogsPage(){
-    Router.push('/blogs')
-  }
   return (
     <div>
       <Head>
@@ -23,18 +11,10 @@ export default function Home() {
 
       </Head>
        <Navbar/>
-    
+   
       <main>
-        <div className='container'>
-        <div className='title'>ANILE MEDIA</div>
-        <button className='button_active' onClick={formPage}>START A PROJECT</button>
-        <br/>
-        <br/>
-        <button className='button_active' onClick={createPage}>CREATE BLOGS</button>
-        <br/>
-        <br/>
-        <button className='button_active' onClick={blogsPage}>VIEW BLOGS</button>
-        </div>
+         <Landing/>
+         <Experiences/>
 </main>
 </div>
   )
