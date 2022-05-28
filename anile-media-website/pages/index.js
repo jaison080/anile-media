@@ -6,13 +6,14 @@ import Marketing from 'components/Marketing'
 import Clients from 'components/Clients'
 import Blogs from 'components/Blogs'
 import Contact from 'components/Contact'
+import Footer from 'components/Footer'
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Anile Media</title>
         <link rel="icon" href="/favicon.ico" />
-
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
       </Head>
        <Navbar/>
    
@@ -23,6 +24,7 @@ export default function Home() {
          <Clients/>
          <Blogs/>
          <Contact/>
+         <Footer/>
 </main>
 </div>
   )
