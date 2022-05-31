@@ -13,12 +13,16 @@
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Work Sans";
   --tertiary-font: "Poppins";
-  --bg-color: #e6f4f4;
-  --primary-color: #0b8b8b;
-  --secondary-color: #3c9b9b;
-  --tertiary-color: #044d4d;
+  background-color: white;
   --text-card: #ffffff;
   --text-main: #333333;
+  --a-color:black;
+}
+[data-theme="dark"]
+{
+  background-color: black;
+  --text-main:#fff;
+  --text-card:black;
 }
 
 .container {
@@ -93,7 +97,7 @@
   width: 130px;
   margin-left: 60px;
   background-color: #85cb33;
-  color: #ffffff;
+  color: var(--text-card);
   cursor: pointer;
   border-radius: 40px;
   font-weight: 700;
@@ -209,7 +213,7 @@ input[type="file"] {
 }
 
 .appbar {
-  background: #fff !important;
+  background: var(--text-card) !important;
   box-shadow: none !important;
 }
 
@@ -409,6 +413,12 @@ li {
   display: block;
   transition: 0.5s;
 }
+.mar-card:hover .head {
+  color:black;
+}
+.mar-card:hover .mar-text {
+  color:black;
+}
 .mar-card-1 {
   width: 375px;
   height: 300px;
@@ -420,15 +430,15 @@ li {
   height: 300px;
 }
 .mar-card-1:hover {
-  background-color: black;
+  background-color: var(--text-main);
   transition: 0.5s;
 }
 .mar-card-1:hover .head {
-  color:#fff;
+  color:var(--text-card);
   transition: 0.5s;
 }
 .mar-card-1:hover .mar-text {
-  color:#fff;
+  color:var(--text-card);
   transition: 0.5s;
 }
 .head {
@@ -565,6 +575,7 @@ li {
   font-weight: 800;
   font-size: 55px;
   display: flex;
+  color:black;
   justify-content: center;
   margin-top: 2%;
   line-height: 40px;
@@ -576,6 +587,7 @@ li {
   font-size: 23px;
   padding-top: 6%;
   font-weight: 400;
+  color: #000;
   display: flex;
   justify-content: center;
 }
