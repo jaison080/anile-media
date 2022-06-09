@@ -48,4 +48,4 @@ function timerUpdate(elem, deadline, finalMsg) {
 	}
 }
 
-countdown('Jun 10 2022 12:00:00 GMT+0500', 'countdown-cont', 'Es hora!');
+countdown('Jun 13 2022 12:00:00 GMT+0500', 'countdown-cont', 'Es hora!');
