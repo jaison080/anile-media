@@ -17,6 +17,7 @@ export default function Home() {
       <Head>
         <title>Anile Media</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=1024"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
       </Head>
       <Navbar />
