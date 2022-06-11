@@ -9,6 +9,7 @@ import Clients from 'components/Clients'
 import Blogs from 'components/Blogs'
 import Contact from 'components/Contact'
 import Footer from 'components/Footer'
+import VerticalTabs from '../components/VerticalTabs'
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <Clients />
         <Blogs />
         <Slider />
+        <VerticalTabs/>
         <Contact />
         <Footer />
       </main>
