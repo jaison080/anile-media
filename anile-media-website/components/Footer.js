@@ -59,7 +59,7 @@ function Footer()
       <div class="bottom_text">
         <span class="copyright_text">Copyright © 2022 <a href="/">Anile Media.</a></span>
         <span class="policy_terms">
-          <a href="/">Privacy policy</a>
+          <a href="https://anilemedia.netlify.app/posts/RXFrfPqIuhHAxx7wPV9L">Privacy policy</a>
           
         </span>
       </div>
