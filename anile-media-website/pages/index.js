@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Landing from 'components/Landing'
 import Experiences from 'components/Experiences'
 
-
+import Slider from 'components/Slider'
 import Marketing from 'components/Marketing'
 import Clients from 'components/Clients'
 import Blogs from 'components/Blogs'
@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Anile Media</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=1024"/>
+        <meta name="viewport" content="width=1024" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
       </Head>
       <Navbar />
@@ -27,6 +27,7 @@ export default function Home() {
         <Marketing />
         <Clients />
         <Blogs />
+        <Slider />
         <Contact />
         <Footer />
       </main>
