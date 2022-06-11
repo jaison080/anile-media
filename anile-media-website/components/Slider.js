@@ -6,7 +6,7 @@ function Slider() {
     <Splide
       options={ {
         rewind: true,
-        gap:'1.5rem',
+        gap:'21rem',
         width:'100%',
         height:'300px',
         perPage:4,
