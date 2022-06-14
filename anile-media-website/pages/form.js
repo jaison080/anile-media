@@ -311,7 +311,7 @@ const [age1, setAge1] = React.useState('');
         <FormLabel className="input-label">Upload RFP</FormLabel>
         <label className="input">SELECT FILES
          <input type="file" className="file-upload" name="filename"></input>
-         </label>
+         </label> 
          <button 
               type="submit"
               className="submit"
