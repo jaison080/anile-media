@@ -6,9 +6,9 @@ function Slider() {
     <Splide
       options={ {
         rewind: true,
-        gap:'21rem',
         width:'100%',
-        height:'300px',
+        gap:'20%',
+        height:'500px',
         perPage:4,
         type   : 'loop',
         focus:'center'
@@ -16,22 +16,22 @@ function Slider() {
       aria-label="My Favorite Images"
     >
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 1"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 6"/>
       </SplideSlide>
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 1"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 5"/>
       </SplideSlide>
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 1"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 4"/>
       </SplideSlide>
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 1"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 6"/>
       </SplideSlide>
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 2"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 5"/>
       </SplideSlide>
       <SplideSlide>
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg" alt="Image 3"/>
+        <img src="https://via.placeholder.com/350x500" width="400px" alt="Image 4"/>
       </SplideSlide>
     </Splide>
   );

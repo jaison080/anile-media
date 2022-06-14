@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
 
-  const { theme, setTheme } = useTheme('light')
+  const { theme, setTheme } = useTheme('')
   const toggleTheme = () => {
     // if the theme is not light, then set it to dark
     if (theme === 'light') {
@@ -110,10 +110,7 @@ const Navbar = () => {
             </Button>
             <Button className="company-button" onClick={blogPage} >Solutions
             </Button>
-          </Box>
-
-          <Box sx={{ flexGrow: 0, background: 'none' }}>
-            <Button className='company-button-1' onClick={handleOpen}>CONTACT US</Button>
+            <Button className='company-button' onClick={handleOpen}>CONTACT US</Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -127,6 +124,10 @@ const Navbar = () => {
                   frameborder="0"
                 ></iframe>
               </Box></Modal>
+          </Box>
+
+          <Box sx={{ flexGrow: 0, background: 'none' }}>
+            
 
             <button className='button_active-1' sx={{ borderRadius: '20px' }} onClick={formPage}>START A PROJECT</button>
 
