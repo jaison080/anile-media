@@ -7,7 +7,7 @@ function Slider() {
       options={ {
         rewind: true,
         width:'100%',
-        gap:'20%',
+        gap:'35%',
         height:'500px',
         perPage:4,
         type   : 'loop',

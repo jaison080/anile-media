@@ -2,7 +2,9 @@ import { TextField,InputLabel,Select,MenuItem, FormLabel, RadioGroup, FormContro
 import { Box} from "@mui/system";
 import CssBaseline from '@mui/material/CssBaseline';
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import React from'react'
+import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Head from "next/head";
 import Navbar from '../components/Navbar'
@@ -19,9 +21,30 @@ const style = {
   p: 4,
 };
 
+
+
+
+const ReactQuill=dynamic(import('react-quill'),{
+  ssr:false,
+  loading:()=><p>Loading....</p>
+})
+const  modules  = {
+  toolbar: [
+      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      ["bold", "italic", "underline", "strike"],
+      [{ color: [] }, { background: [] }],
+      [{ script:  "sub" }, { script:  "super" }],
+      ["code-block"],
+      [{ list:  "ordered" }, { list:  "bullet" }],
+      [{ indent:  "-1" }, { indent:  "+1" }, { align: [] }],
+      ["link"],
+  ],
+};
+
 export default function form()
 {
   
+  const [value, setValue] = React.useState("");
    async function submitForm(event){
      
     event.preventDefault();
@@ -34,7 +57,7 @@ export default function form()
       hear:data.get('hear'),
       work:data.get('work'),
       budget:data.get('budget'),
-      details:data.get('details'),
+      content:value,
 
     };
     console.log(JSON.stringify(userData));
@@ -295,23 +318,11 @@ const [age1, setAge1] = React.useState('');
               </Grid>
             <Grid item xs={10}>
               <FormLabel sx={{display:'flex',justifyContent:'center', fontFamily:'Raleway'}}>Project Details</FormLabel>
-      <TextField
-          id="details"
-          multiline
-          sx={{ fontFamily:'Raleway'}}
-          fullWidth
-          type="text"
-          rows={10}
-          name="details"
-        />
+              <ReactQuill  modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
             </Grid>
              
             </Grid>
             
-        <FormLabel className="input-label">Upload RFP</FormLabel>
-        <label className="input">SELECT FILES
-         <input type="file" className="file-upload" name="filename"></input>
-         </label> 
          <button 
               type="submit"
               className="submit"

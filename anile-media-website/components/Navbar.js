@@ -5,8 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-
-
 import { useTheme } from 'next-themes'
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
@@ -14,7 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Modal, Switch } from '@mui/material';
 import { useRouter } from 'next/router';
-
+import styles from './Navbar.module.css'
 
 
 const pages = ['Customer Stories', 'About', 'Work', 'Solutions'];
@@ -62,14 +60,14 @@ const Navbar = () => {
     }
   }
   return (
-    <AppBar position="sticky" className="appbar">
+    <AppBar position="sticky" className={styles.appbar}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            className="company"
+            className={styles.company}
             href="/"
             sx={{
               mr: 2,
@@ -88,7 +86,7 @@ const Navbar = () => {
             variant="h5"
             noWrap
             component="a"
-            className="company"
+            className={styles.company}
             href="/"
             sx={{
               mr: 2,
@@ -101,16 +99,16 @@ const Navbar = () => {
           >
             ANILE MEDIA
           </Typography>
-          <Box className="box-1" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', }}>
-            <Button className="company-button" onClick={blogPage} >Customer Stories
+          <Box className={styles.box_1} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', }}>
+            <Button className={styles.company_button} onClick={blogPage} >Customer Stories
             </Button>
-            <Button className="company-button" onClick={blogPage} >About
+            <Button className={styles.company_button} onClick={blogPage} >About
             </Button>
-            <Button className="company-button" onClick={blogPage} >Work
+            <Button className={styles.company_button} onClick={blogPage} >Work
             </Button>
-            <Button className="company-button" onClick={blogPage} >Solutions
+            <Button className={styles.company_button} onClick={blogPage} >Solutions
             </Button>
-            <Button className='company-button' onClick={handleOpen}>CONTACT US</Button>
+            <Button className={styles.company_button} onClick={handleOpen}>CONTACT US</Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -129,7 +127,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0, background: 'none' }}>
             
 
-            <button className='button_active-1' sx={{ borderRadius: '20px' }} onClick={formPage}>START A PROJECT</button>
+            <button className={styles.button_active_1} sx={{ borderRadius: '20px' }} onClick={formPage}>START A PROJECT</button>
 
           </Box>
           <Switch onClick={toggleTheme} color="warning" />
@@ -161,13 +159,13 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem onClick={blogPage} className="company-button">Customer Stories
+              <MenuItem onClick={blogPage} className={styles.company_button}>Customer Stories
               </MenuItem>
-              <MenuItem onClick={blogPage} className="company-button">About
+              <MenuItem onClick={blogPage} className={styles.company_button}>About
               </MenuItem>
-              <MenuItem onClick={blogPage} className="company-button">Work
+              <MenuItem onClick={blogPage} className={styles.company_button}>Work
               </MenuItem>
-              <MenuItem onClick={blogPage} className="company-button" >Solutions
+              <MenuItem onClick={blogPage} className={styles.company_button} >Solutions
               </MenuItem>
             </Menu>
           </Box>

@@ -10,14 +10,11 @@ import Blogs from 'components/Blogs'
 import Contact from 'components/Contact'
 import Footer from 'components/Footer'
 import VerticalTabs from '../components/VerticalTabs'
+import Cookies from 'components/Cookies'
 
 
 export default function Home() {
-  const [active, setActive] = React.useState(true);
-
-  function closeItem() {
-    setActive(false);
-  }
+ 
   return (
     <div>
       <Head>
@@ -28,11 +25,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-      <div className={active?"cookie-message":"close-1"}>
-<img src="https://img.icons8.com/plasticine/100/000000/cookie.png"/>
-<span>We use cookies to provide you the best possible experience. But don't panic - we won't share any of your data.</span>
-<button class="close" onClick={closeItem}><i class="fa fa-times"></i></button>
-</div>
+      <Cookies/>
         <Landing />
         <Experiences />
         <Marketing />
