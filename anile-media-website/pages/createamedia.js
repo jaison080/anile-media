@@ -23,7 +23,7 @@ const  modules  = {
     ],
 };
 
-const  create  = () => {
+const  createamedia  = () => {
     const titleRef = useRef(null);
     const handleTitleFieldChange=function(e) {
         settitleValue(e.target.value)
@@ -82,12 +82,14 @@ const  create  = () => {
               <Box component="form" className="box-add" noValidate onSubmit={uploadPost}>
                 <TextField className='blog-title'
           name="title"
+          sx={{backgroundColor:'white'}}
           type="text"
           value={titleValue} onChange={handleTitleFieldChange}
           ref={titleRef}
           placeholder="Enter a Title.."/>
           <TextField className='blog-title'
           name="author"
+          sx={{backgroundColor:'white'}}
           type="text"
           value={authorValue} onChange={handleAuthorFieldChange}
           ref={authorRef}
@@ -102,4 +104,4 @@ const  create  = () => {
               </div>);
 };
 
-export  default  create;
+export  default  createamedia;

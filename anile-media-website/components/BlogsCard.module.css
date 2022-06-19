@@ -1,0 +1,34 @@
+.mar_card_1 {
+    width: 375px;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+  }
+  .vl{
+    border-left: 1px solid gray;
+    height: 300px;
+  }
+  .mar_card_1:hover {
+    background-color: var(--text-main);
+    transition: 0.5s;
+  }
+  .mar_card_1:hover .head {
+    color:var(--text-card);
+    transition: 0.5s;
+  }
+  .mar_card_1:hover .mar_text {
+    color:var(--text-card);
+    transition: 0.5s;
+  }
+  .head {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 40px ;
+  }
+  .mar_text {
+    font-family: var(--primary-font);
+    font-weight: 450;
+    font-size: 18px;
+    margin: 40px;
+  }

@@ -4,14 +4,14 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import styles from './VerticalTabs.module.css'
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
     <div
       role="tabpanel"
-      className="tab-1"
+      className={styles.tab_1}
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
@@ -19,7 +19,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography className="tab-1">{children}</Typography>
+          <Typography className={styles.tab_1}>{children}</Typography>
         </Box>
       )}
     </div>
