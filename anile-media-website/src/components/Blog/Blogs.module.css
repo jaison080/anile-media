@@ -1,0 +1,23 @@
+.h1_landing {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 55px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 50%;
+    line-height: 70px;
+  }
+  
+  .row_card_3 {
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 700px) {
+    .h1_landing{
+        font-size: 35px;
+      }
+      
+  }

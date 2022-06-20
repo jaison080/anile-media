@@ -18,12 +18,6 @@
   --text-main: #333333;
   --a-color:black;
 }
-[data-theme="dark"]
-{
-  background-color: black;
-  --text-main:#fff;
-  --text-card:black;
-}
 
 .cookie_message {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
@@ -312,15 +306,6 @@ input[type="file"] {
   letter-spacing: -0.02em !important;
   width: 100%;
 }
-.h1-landing {
-  font-family: var(--primary-font);
-  font-weight: 800;
-  font-size: 55px;
-  margin-top: 5%;
-  margin-left: 10%;
-  line-height: 70px;
-}
-
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -363,67 +348,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-.row-card {
-  margin-left: 9%;
-  margin-right: 9%;
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.row-card-3 {
 
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.row-card-1 {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 8%;
-}
+
+
 .row-card-2 {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
-.h1-landing-1 {
-  font-family: var(--primary-font);
-  font-weight: 800;
-  font-size: 55px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  line-height: 70px;
-}
 
 
 
-.work {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10.5%;
-}
-.work-btn {
-  width: 150px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  transition: 0.5s;
-  font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 13px;
-  border: none;
-  cursor: pointer;
-  margin-top: 2%;
-}
-.work-btn:hover {
-  background-color: rgb(255, 217, 0);
-  color: black;
-}
 
 
 .tab{

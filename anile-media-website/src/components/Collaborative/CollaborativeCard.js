@@ -1,5 +1,5 @@
 import styles from './CollaborativeCard.module.css'
-import CollaborativeData from '../data/CollaborativeData'
+import CollaborativeData from '../../data/CollaborativeData'
 function CollaborativeCard()
 {
   return(

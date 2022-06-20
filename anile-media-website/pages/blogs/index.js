@@ -1,9 +1,9 @@
 import { useState, useEffect} from "react";
 import axios from 'axios';
 import {useRouter} from "next/router";
-import HomeCard from '../../components/card';
+import HomeCard from '../../src/components/Miscellaneous/card';
 import Head from "next/head";
-import Navbar from "components/Navbar";
+import Navbar from "src/components/Navbar/Navbar";
 export default function feed(){
   const router = useRouter();
     const [posts,setPosts]= useState([0,0,0,0,0,0]);

@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
-import Blog from '../../utils/models/blogmodel';
+import Blog from '../../src/utils/models/blogmodel';
 
 export default async (req, res) => {
     try {

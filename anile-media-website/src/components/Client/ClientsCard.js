@@ -1,5 +1,5 @@
 import styles from './ClientsCard.module.css'
-import ClientsData from '../data/ClientsData'
+import ClientsData from '../../data/ClientsData'
 function ClientsCard()
 {
     return(

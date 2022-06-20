@@ -4,13 +4,12 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import { useTheme } from 'next-themes'
+import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Modal, Switch } from '@mui/material';
+import { Modal } from '@mui/material';
 import { useRouter } from 'next/router';
 import styles from './Navbar.module.css'
 
@@ -47,18 +46,6 @@ const Navbar = () => {
     p: 4,
   };
 
-
-
-  const { theme, setTheme } = useTheme('')
-  const toggleTheme = () => {
-    // if the theme is not light, then set it to dark
-    if (theme === 'light') {
-      setTheme('dark');
-      // otherwise, it should be light
-    } else {
-      setTheme('light');
-    }
-  }
   return (
     <AppBar position="sticky" className={styles.appbar}>
       <Container maxWidth="xl" >
@@ -83,7 +70,7 @@ const Navbar = () => {
 
 
           <Typography
-            variant="h5"
+            variant="h7"
             noWrap
             component="a"
             className={styles.company}
@@ -130,7 +117,6 @@ const Navbar = () => {
             <button className={styles.button_active_1} sx={{ borderRadius: '20px' }} onClick={formPage}>START A PROJECT</button>
 
           </Box>
-          <Switch onClick={toggleTheme} color="warning" />
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -159,13 +145,15 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem onClick={blogPage} className={styles.company_button}>Customer Stories
+              <MenuItem onClick={blogPage} className={styles.company_button}>CUSTOMER STORIES
               </MenuItem>
-              <MenuItem onClick={blogPage} className={styles.company_button}>About
+              <MenuItem onClick={blogPage} className={styles.company_button}>ABOUT
               </MenuItem>
-              <MenuItem onClick={blogPage} className={styles.company_button}>Work
+              <MenuItem onClick={blogPage} className={styles.company_button}>WORK
               </MenuItem>
-              <MenuItem onClick={blogPage} className={styles.company_button} >Solutions
+              <MenuItem onClick={blogPage} className={styles.company_button} >SOLUTIONS
+              </MenuItem>
+              <MenuItem onClick={handleOpen} className={styles.company_button} >CONTACT US
               </MenuItem>
             </Menu>
           </Box>

@@ -9,6 +9,13 @@ function Slider() {
         width:'100%',
         gap:'35%',
         height:'500px',
+        breakpoints:
+        {
+          700:
+          {
+            perPage:1
+          }
+        },
         perPage:4,
         type   : 'loop',
         focus:'center'
