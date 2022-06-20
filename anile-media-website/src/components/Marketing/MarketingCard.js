@@ -1,5 +1,5 @@
 import styles from './MarketingCard.module.css'
-import MarketingData from '../data/MarketingData'
+import MarketingData from '../../data/MarketingData'
 function MarketingCard()
 {
     return(

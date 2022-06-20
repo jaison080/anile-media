@@ -42,3 +42,11 @@
     font-weight: 400;
     color: black;
   }
+  @media (max-width: 700px) {
+    .mar_card {
+      width: 500px;
+      height: 550px;
+      cursor: pointer;
+      position: relative;
+    }
+  }

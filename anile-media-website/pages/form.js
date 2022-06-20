@@ -7,7 +7,7 @@ import React from'react'
 import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Head from "next/head";
-import Navbar from '../components/Navbar'
+import Navbar from '../src/components/Navbar/Navbar'
 
 const style = {
   position: 'absolute',
@@ -44,7 +44,7 @@ const  modules  = {
 export default function form()
 {
   
-  const [value, setValue] = React.useState("");
+  
    async function submitForm(event){
      
     event.preventDefault();
@@ -60,6 +60,7 @@ export default function form()
       content:value,
 
     };
+    
     console.log(JSON.stringify(userData));
     const res = await axios.post('/api/form', JSON.stringify(userData), {
         headers: {
@@ -86,6 +87,7 @@ export default function form()
   const handleClick = () => router.push('./form');
     const [age, setAge] = React.useState('');
 const [age1, setAge1] = React.useState('');
+const [value, setValue] = React.useState("");
   const handleChange = (event) => {
     setAge(event.target.value);
   };

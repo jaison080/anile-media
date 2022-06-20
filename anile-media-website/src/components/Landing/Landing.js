@@ -9,7 +9,7 @@ function Landing() {
                 <br />
                 <div className={styles.c3}><div className={styles.type3}>Innovation</div></div>
             </h4 >
-            <div className={styles.p_landing}>Through unified branding , human-centered UX/UI design , future- <br />forward web development , and strategic digital marketing , Big Drop<br /> works with the world’s most ambitious brands in creating innovative<br /> digital products designed to fuel innovation.</div>
+            <div className={styles.p_landing}>Through unified branding , human-centered UX/UI design , future-forward web development , and strategic digital marketing , Big Drop works with the world’s most ambitious brands in creating innovative digital products designed to fuel innovation.</div>
             <div className={styles.logo}><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></div>
         </div >
     );
