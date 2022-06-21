@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import HomeCard from '../../src/components/Miscellaneous/card';
 import Head from "next/head";
 import Navbar from "src/components/Navbar/Navbar";
+import styles from '../../src/components/css/blogs.module.css'
 export default function feed(){
   const router = useRouter();
     const [posts,setPosts]= useState([0,0,0,0,0,0]);
@@ -34,13 +35,13 @@ return(
       </Head>
      <Navbar/>
       <main>
-    <div className="container">
-      <div className="title">Blogs</div>
+    <div className={styles.container}>
+      <div className={styles.title}>Blogs</div>
     <br/>
     <br/>
     {posts.map(post => (
         
-    <div className="blog-card">
+    <div className={styles.blog_card}>
         <HomeCard post={post} loading = {loading} authorIsUser = {0} />
         <br/>
         <br/>

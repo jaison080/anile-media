@@ -1,0 +1,20 @@
+.postspage
+{
+  font-family: var(--primary-font);
+}
+.h1
+{
+    font-size: medium;
+    justify-content: center;
+}
+.h2
+{
+font-size: small;
+justify-content: center;
+}
+.p
+{
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+}

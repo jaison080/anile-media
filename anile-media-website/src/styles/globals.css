@@ -6,7 +6,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  color:black;
 }
 
 /* VARIABLES */
@@ -79,63 +78,6 @@
 {
   display: none;
 }
-
-
-
-
-
-
-.btn {
-  height: 40px;
-  border-radius: 40px;
-  width: 100px;
-  background-color: #ffffff;
-  border: #85cb33 1px solid;
-  color: #85cb33;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 15px;
-  font-family: var(--primary-font);
-}
-.btn-post {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin: auto;
-  margin-top: 10px !important;
-  height: 40px;
-  border-radius: 40px;
-  width: 100px;
-  font-weight: 700;
-  font-size: 15px;
-  font-family: var(--primary-font);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.btn:hover {
-  background-color: rgb(255, 217, 0) ;
-  color: #fff;
-}
-.add-title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 82px;
-  letter-spacing: -0.02em;
-}
-.blog-title {
-  margin-bottom: 1% !important;
-  font-family: var(--primary-font) !important;
-  font-weight: 450 !important;
-  font-size: 20px !important;
-  letter-spacing: -0.02em !important;
-  width: 100%;
-}
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -143,9 +85,7 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
-.box-add {
-  margin: 20px;
-}
+
 
 .blogs {
   display: flex;
@@ -153,14 +93,7 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
   justify-content: space-between;
 }
-.blog-card {
-  width: 75%;
-  height: 100%;
-}
-.blog-card:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s ease;
-}
+
 @media (max-width: 600px) {
   .button_active-1 {
     display: none;
@@ -198,7 +131,3 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-.postspage
-{
-  font-family: var(--primary-font);
-}

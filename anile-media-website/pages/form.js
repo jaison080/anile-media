@@ -8,7 +8,7 @@ import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Head from "next/head";
 import Navbar from '../src/components/Navbar/Navbar'
-import styles from '../src/components/css/Forms.module.css'
+import styles from '../src/components/css/forms.module.css'
 const style = {
   position: 'absolute',
   top: '50%',
