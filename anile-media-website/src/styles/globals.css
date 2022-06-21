@@ -14,8 +14,8 @@
   --secondary-font: "Work Sans";
   --tertiary-font: "Poppins";
   background-color: white;
-  --text-card: #ffffff;
-  --text-main: #333333;
+  --text-card: black;
+  --text-main: black;
   --a-color:black;
 }
 
