@@ -34,8 +34,8 @@ return (
   <div className={styles.postspage}>
     
     <Container maxWidth="lg" fixed>
-    <h1 className={styles.h1}>{post.title}</h1>
-    <h2 className={styles.h2}>{post.author}</h2>
+    <div className={styles.h1}>{post.title}</div>
+    <div className={styles.h2}>{post.author}</div>
     <div dangerouslySetInnerHTML={{__html:post.content}} />
     </Container>
   </div>
