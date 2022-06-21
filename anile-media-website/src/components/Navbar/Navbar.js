@@ -87,7 +87,7 @@ const Navbar = () => {
             ANILE MEDIA
           </Typography>
           <Box className={styles.box_1} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', }}>
-            <Button className={styles.company_button} onClick={blogPage} >Customer Stories
+            <Button className={styles.company_button} onClick={blogPage} >EXPERIENCES
             </Button>
             <Button className={styles.company_button} onClick={blogPage} >About
             </Button>
@@ -95,7 +95,7 @@ const Navbar = () => {
             </Button>
             <Button className={styles.company_button} onClick={blogPage} >Solutions
             </Button>
-            <Button className={styles.company_button} onClick={handleOpen}>CONTACT US</Button>
+            <Button className={styles.company_button} onClick={handleOpen}>CONTACT </Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -145,7 +145,7 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem onClick={blogPage} className={styles.company_button}>CUSTOMER STORIES
+              <MenuItem onClick={blogPage} className={styles.company_button}>EXPERIENCES
               </MenuItem>
               <MenuItem onClick={blogPage} className={styles.company_button}>ABOUT
               </MenuItem>
@@ -153,7 +153,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={blogPage} className={styles.company_button} >SOLUTIONS
               </MenuItem>
-              <MenuItem onClick={handleOpen} className={styles.company_button} >CONTACT US
+              <MenuItem onClick={handleOpen} className={styles.company_button} >CONTACT
               </MenuItem>
               <MenuItem onClick={formPage} className={styles.company_button} >START A PROJECT
               </MenuItem>
