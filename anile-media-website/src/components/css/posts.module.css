@@ -5,16 +5,24 @@
 .h1
 {
     font-size: medium;
+    display: flex;
+    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 .h2
 {
 font-size: small;
+display: flex;
+align-content: center;
+align-items: center;
 justify-content: center;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 .p
 {
-    line-height: 20px;
+    line-height: 40px;
     justify-content: center;
     align-items: center;
 }
