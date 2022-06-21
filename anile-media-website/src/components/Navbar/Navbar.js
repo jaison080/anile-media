@@ -155,6 +155,8 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={handleOpen} className={styles.company_button} >CONTACT US
               </MenuItem>
+              <MenuItem onClick={formPage} className={styles.company_button} >START A PROJECT
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

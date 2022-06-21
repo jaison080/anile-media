@@ -38,4 +38,12 @@
     .h1_landing_1{
         font-size: 35px;
       }
+      
   }
+  @media (max-width: 425px) {
+  .mar_card_1
+      {
+        width: 300px;
+        height: 350px;
+      }
+    }
