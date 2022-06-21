@@ -8,7 +8,7 @@ import  "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 import Head from "next/head";
 import Navbar from '../src/components/Navbar/Navbar'
-
+import styles from '../src/components/css/Forms.module.css'
 const style = {
   position: 'absolute',
   top: '50%',
@@ -102,15 +102,15 @@ const [value, setValue] = React.useState("");
       </Head>
       <Navbar/>
       <main>
-        <div className="container">
-            <div className="title">Let's Work Together</div>
-            <div className="description">By leveraging our full spectrum strategy, design, and technology capabilities, we deliver game-changing outcomes for our clients around the world.</div>
+        <div className={styles.container}>
+            <div className={styles.title}>Let's Work Together</div>
+            <div className={styles.description}>By leveraging our full spectrum strategy, design, and technology capabilities, we deliver game-changing outcomes for our clients around the world.</div>
             <br/>
-            <div className="description1">How Can We Help?</div>
-            <div className="tabs">
-            <button className="button_active" onClick={handleClick}>START A PROJECT</button>
-            <span className="or">OR</span>
-            <button className="button" onClick={handleOpen}>SCHEDULE A CALL</button>
+            <div className={styles.description1}>How Can We Help?</div>
+            <div className={styles.tabs}>
+            <button className={styles.button_active} onClick={handleClick}>START A PROJECT</button>
+            <span className={styles.or}>OR</span>
+            <button className={styles.button} onClick={handleOpen}>SCHEDULE A CALL</button>
             <Modal
         open={open}
         onClose={handleClose}
@@ -132,7 +132,7 @@ const [value, setValue] = React.useState("");
             flexDirection: 'column',
             alignItems: 'center',
             fontFamily:'Raleway', mt: 3 }}>
-          <Typography  className="form-title">
+          <Typography  className={styles.form_title}>
             BASIC INFORMATION
           </Typography>
             <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
@@ -222,19 +222,18 @@ const [value, setValue] = React.useState("");
         </FormControl>
               </Grid>
             </Grid>
-          <Typography  className="form-title-1">
+          <Typography  className={styles.form_title_1}>
             PROJECT DETAILS
           </Typography>
             <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
                <Grid item xs={10} >
                 <FormControl fullWidth>
-                <InputLabel sx={{ fontFamily:'Raleway'}} id="demo-multiple-name-label">How do you like to work with us?</InputLabel>
+                <InputLabel id="demo-multiple-name-label">How do you like to work with us?</InputLabel>
          <Select
           labelId="demo-multiple-name-label"
           id="work"
           name="work"
           value={age1}
-          sx={{ fontFamily:'Raleway'}}
           onChange={handleChange1}
           input={<OutlinedInput label="How do you like to work with us?" />}
         >
@@ -242,7 +241,6 @@ const [value, setValue] = React.useState("");
             <MenuItem
               key='1'
               value=' Web Design & Development'
-              sx={{ fontFamily:'Raleway'}}
             >
               Web Design & Development
 
@@ -250,7 +248,6 @@ const [value, setValue] = React.useState("");
 
             <MenuItem
               key='2'
-              sx={{ fontFamily:'Raleway'}}
               value='Branding & Identity'
             >
               Branding & Identity
@@ -260,14 +257,12 @@ const [value, setValue] = React.useState("");
             <MenuItem
               key='3'
               value='Digital Marketing'
-              sx={{ fontFamily:'Raleway'}}
             >
               Digital Marketing
 
             </MenuItem>
             <MenuItem
               key='4'
-              sx={{ fontFamily:'Raleway'}}
               value='Custom Web/Mobile App Development'
             >
               Custom Web/Mobile App Development
@@ -276,7 +271,6 @@ const [value, setValue] = React.useState("");
             </MenuItem>
             <MenuItem
               key='5'
-              sx={{ fontFamily:'Raleway'}}
               value='Strategy & Consulting'
             >
               Strategy & Consulting
@@ -285,7 +279,6 @@ const [value, setValue] = React.useState("");
             <MenuItem
               key='6'
               value='Ongoing Support'
-              sx={{ fontFamily:'Raleway'}}
             >
               Ongoing Support
 
@@ -294,7 +287,6 @@ const [value, setValue] = React.useState("");
 
             <MenuItem
               key='0'
-              sx={{ fontFamily:'Raleway'}}
               value='None'
             >
               None
@@ -303,7 +295,7 @@ const [value, setValue] = React.useState("");
         </FormControl>
               </Grid>
               <Grid item xs={10}>
-                <FormLabel sx={{display:'flex',fontFamily:'Raleway',justifyContent:'center'}}>What's your budget ?</FormLabel>
+                <FormLabel sx={{display:'flex',justifyContent:'center'}}>What's your budget ?</FormLabel>
       <RadioGroup
       sx={{display:'flex',justifyContent:'center'}}
         row
@@ -312,14 +304,14 @@ const [value, setValue] = React.useState("");
         id="budget"
         type="text"
       >
-        <FormControlLabel sx={{ fontFamily:'Raleway'}} value="20k-40k"  control={<Radio />} label="$20k-40k" />
-        <FormControlLabel sx={{ fontFamily:'Raleway'}} value="40k-60k" control={<Radio />} label="$40k-60k" />
-        <FormControlLabel sx={{ fontFamily:'Raleway'}} value="60k-80k" control={<Radio />} label="$60k-80k" />
-         <FormControlLabel sx={{ fontFamily:'Raleway'}} value="$100k +" control={<Radio />} label="$100k +" />
+        <FormControlLabel  value="20k-40k"  control={<Radio />} label="$20k-40k" />
+        <FormControlLabel  value="40k-60k" control={<Radio />} label="$40k-60k" />
+        <FormControlLabel  value="60k-80k" control={<Radio />} label="$60k-80k" />
+         <FormControlLabel  value="$100k +" control={<Radio />} label="$100k +" />
       </RadioGroup>
               </Grid>
             <Grid item xs={10}>
-              <FormLabel sx={{display:'flex',justifyContent:'center', fontFamily:'Raleway'}}>Project Details</FormLabel>
+              <FormLabel sx={{display:'flex',justifyContent:'center',marginBottom:'10px'}}>Project Details</FormLabel>
               <ReactQuill  modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
             </Grid>
              
@@ -327,7 +319,7 @@ const [value, setValue] = React.useState("");
             
          <button 
               type="submit"
-              className="submit"
+              className={styles.submit}
             >SEND</button>
             </Box>
           </div>
