@@ -31,11 +31,11 @@ return (
       </Head>
      <Navbar/>
       <main>
-  <div className='postspage'>
+  <div className={styles.postspage}>
     
     <Container maxWidth="lg" fixed>
-    <h1>{post.title}</h1>
-    <h2>{post.author}</h2>
+    <h1 className={styles.h1}>{post.title}</h1>
+    <h2 className={styles.h2}>{post.author}</h2>
     <div dangerouslySetInnerHTML={{__html:post.content}} />
     </Container>
   </div>

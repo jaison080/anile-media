@@ -6,6 +6,7 @@ import axios from 'axios';
 import Router from 'next/router';
 import Head from "next/head";
 import Navbar from "src/components/Navbar/Navbar";
+import styles from '../src/components/css/createamedia.module.css'
 const ReactQuill=dynamic(import('react-quill'),{
     ssr:false,
     loading:()=><p>Loading....</p>
@@ -76,18 +77,18 @@ const  createamedia  = () => {
      <Navbar/>
       <main>
         
-        <div className="quill">
-        <div className="add-title">Add Blog</div>
+        <div>
+        <div className={styles.add_title}>Add Blog</div>
           
-              <Box component="form" className="box-add" noValidate onSubmit={uploadPost}>
-                <TextField className='blog-title'
+              <Box component="form" className={styles.box_add} noValidate onSubmit={uploadPost}>
+                <TextField className={styles.blog_title}
           name="title"
           sx={{backgroundColor:'white'}}
           type="text"
           value={titleValue} onChange={handleTitleFieldChange}
           ref={titleRef}
           placeholder="Enter a Title.."/>
-          <TextField className='blog-title'
+          <TextField className={styles.blog_title}
           name="author"
           sx={{backgroundColor:'white'}}
           type="text"
@@ -95,8 +96,8 @@ const  createamedia  = () => {
           ref={authorRef}
           placeholder="Name of Author"/>
         <ReactQuill  modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
-        <div className='btn-post'>
-          <button className='btn' type="submit" onClick={uploadPost}>POST</button>
+        <div className={styles.btn_post}>
+          <button className={styles.btn} type="submit" onClick={uploadPost}>POST</button>
           </div>
           </Box>
               </div>
