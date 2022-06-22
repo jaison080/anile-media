@@ -5,7 +5,7 @@ import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, 
 import Container from '@mui/material/Container';
 import Head from 'next/head';
 import Navbar from 'src/components/Navbar/Navbar';
-import styles from '../../src/components/posts.module.css'
+import styles from '../../src/components/css/posts.module.css'
 export default function Post() {
 const [post, setPost] = useState('');
 const router = useRouter();
