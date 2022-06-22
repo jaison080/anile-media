@@ -4,7 +4,8 @@
 }
 .h1
 {
-    font-size: medium;
+    font-size:3em;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     align-content: center;
@@ -12,7 +13,8 @@
 }
 .h2
 {
-font-size: small;
+font-size: 1em;
+font-weight: bold;
 display: flex;
 align-content: center;
 align-items: center;

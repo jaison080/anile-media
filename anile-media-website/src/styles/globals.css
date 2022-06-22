@@ -123,11 +123,5 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-.tab{
-  color: var(--text-main) !important;
-  font-family: var(--primary-font);
-  font-weight: 700 !important;
-  font-size: large !important;
-}
 
 
