@@ -24,6 +24,9 @@ const Navbar = () => {
   function blogPage() {
     Router.push('/blogs')
   }
+  function servicesPage() {
+    Router.push('/services')
+  }
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -93,7 +96,7 @@ const Navbar = () => {
             </Button>
             <Button className={styles.company_button} onClick={blogPage} >Work
             </Button>
-            <Button className={styles.company_button} onClick={blogPage} >Solutions
+            <Button className={styles.company_button} onClick={servicesPage} >Solutions
             </Button>
             <Button className={styles.company_button} onClick={handleOpen}>CONTACT </Button>
             <Modal
@@ -151,7 +154,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={blogPage} className={styles.company_button}>WORK
               </MenuItem>
-              <MenuItem onClick={blogPage} className={styles.company_button} >SOLUTIONS
+              <MenuItem onClick={servicesPage} className={styles.company_button} >SOLUTIONS
               </MenuItem>
               <MenuItem onClick={handleOpen} className={styles.company_button} >CONTACT
               </MenuItem>
