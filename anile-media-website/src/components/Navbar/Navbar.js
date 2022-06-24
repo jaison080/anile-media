@@ -114,7 +114,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0, background: 'none' }}>
             
 
-            <button className={styles.button_active_1} sx={{ borderRadius: '20px' }} onClick={formPage}>START A PROJECT</button>
+            <button className={styles.button_active_1} onClick={formPage}>START A PROJECT</button>
 
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
