@@ -1,0 +1,52 @@
+.mar_card {
+    width: 400px;
+    height: 380px;
+    cursor: pointer;
+    position: relative;
+  }
+  .mar_card:hover {
+    background-color: rgb(255, 217, 0);
+    transition: 0.5s;
+  }
+  .mar_card:hover .more {
+    display: block;
+    transition: 0.5s;
+  }
+  .mar_card:hover .head {
+    color:black;
+  }
+  .mar_card:hover .mar_text {
+    color:black;
+  }
+  .head {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 40px;
+  }
+  .mar_text {
+    font-family: var(--primary-font);
+    font-weight: 450;
+    font-size: 18px;
+    margin: 40px;
+  }
+  .more {
+    margin: 40px;
+    font-weight: 450;
+    display: none;
+  }
+  .more a {
+    font-family: var(--primary-font);
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: 400;
+    color: black;
+  }
+  @media (max-width: 700px) {
+    .mar_card {
+      width: 350px;
+      height: 420px;
+      cursor: pointer;
+      position: relative;
+    }
+  }

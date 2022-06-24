@@ -102,11 +102,11 @@ const [value, setValue] = React.useState("");
       </Head>
       <Navbar/>
       <main>
-        <div className={styles.container}>
+        <div>
             <div className={styles.title}>Let's Work Together</div>
             <div className={styles.description}>By leveraging our full spectrum strategy, design, and technology capabilities, we deliver game-changing outcomes for our clients around the world.</div>
             <br/>
-            <div className={styles.description1}>How Can We Help?</div>
+            <div className={styles.description}>How Can We Help?</div>
             <div className={styles.tabs}>
             <button className={styles.button_active} onClick={handleClick}>START A PROJECT</button>
             <span className={styles.or}>OR</span>
@@ -126,16 +126,11 @@ const [value, setValue] = React.useState("");
         </Box></Modal>
             </div>
             <CssBaseline />
-            <Box component="form" noValidate onSubmit={submitForm} sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            fontFamily:'Raleway', mt: 3 }}>
+            <Box component="form" noValidate onSubmit={submitForm} className={styles.formsbox}>
           <Typography  className={styles.form_title}>
             BASIC INFORMATION
           </Typography>
-            <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
+            <Grid container spacing={3} className={styles.grid}>
               <Grid item xs={10}>
                 <TextField
                   required
@@ -222,10 +217,10 @@ const [value, setValue] = React.useState("");
         </FormControl>
               </Grid>
             </Grid>
-          <Typography  className={styles.form_title_1}>
+          <Typography  className={styles.form_title}>
             PROJECT DETAILS
           </Typography>
-            <Grid container spacing={3} sx={{display:'flex',justifyContent:'center'}}>
+            <Grid container spacing={3} className={styles.grid}>
                <Grid item xs={10} >
                 <FormControl fullWidth>
                 <InputLabel id="demo-multiple-name-label">How do you like to work with us?</InputLabel>
@@ -295,9 +290,9 @@ const [value, setValue] = React.useState("");
         </FormControl>
               </Grid>
               <Grid item xs={10}>
-                <FormLabel sx={{display:'flex',justifyContent:'center'}}>What's your budget ?</FormLabel>
+                <FormLabel className={styles.detailslabel}>What's your budget ?</FormLabel>
       <RadioGroup
-      sx={{display:'flex',justifyContent:'center'}}
+      className={styles.radiogroup}
         row
         aria-labelledby="demo-row-radio-buttons-group-label"
         name="budget"
@@ -311,7 +306,7 @@ const [value, setValue] = React.useState("");
       </RadioGroup>
               </Grid>
             <Grid item xs={10}>
-              <FormLabel sx={{display:'flex',justifyContent:'center',marginBottom:'10px'}}>Project Details</FormLabel>
+              <FormLabel className={styles.detailslabel}>Project Details</FormLabel>
               <ReactQuill  modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
             </Grid>
              

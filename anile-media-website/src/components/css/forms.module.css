@@ -1,13 +1,4 @@
-.container {
-    display: flex;
-    font-family: var(--primary-font) !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    padding-bottom: 40px;
-  }
-  
+
 .title {
     display: flex;
     justify-content: center;
@@ -15,36 +6,19 @@
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 50px;
+    margin-top: 5%;
     line-height: 82px;
     letter-spacing: -0.02em;
     align-items: center;
   }
   
   .description {
-    overflow-wrap: break-word;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     font-family: var(--primary-font);
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 200;
-    line-height: 40px;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .description1 {
-    overflow-wrap: break-word;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-content: center;
-    justify-content: center;
-    font-family: var(--primary-font);
+    margin-top: 1%;
     font-weight: 200;
     line-height: 40px;
     font-size: 18px;
@@ -52,13 +26,11 @@
   }
   
   .tabs {
-    margin-top: 20px;
+    margin-top:2%;
+    justify-content: center;
+    display: flex;
   }
-  
-
-
-
-.button_active {
+  .button_active {
     height: 60px;
     width: 150px;
     background-color: #85cb33;
@@ -86,8 +58,7 @@
   }
   
   .or {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     font-family: var(--primary-font);
     font-weight: 800;
     font-size: 12px;
@@ -97,27 +68,14 @@
   .form_title {
     font-family: var(--primary-font);
     font-weight: 800 !important;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
     color: black;
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
-  }
-  
-.form_title_1 {
-    font-family: var(--primary-font);
-    font-weight: 800 !important;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-    margin-bottom: 10px !important;
-    margin-top: 20px !important;
+    margin-bottom: 1% !important;
+    margin-top: 2% !important;
   }
   
 .submit {
@@ -142,4 +100,25 @@
     background-color: #85cb33;
     color: #fff;
   }
-  
+  .detailslabel
+  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  .radiogroup
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .grid
+  {
+    display: flex;
+    justify-content: center;
+  }
+ .formsbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+ }
