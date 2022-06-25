@@ -69,8 +69,10 @@
   }
   .start_title_1 {
     font-family: var(--primary-font);
+    margin: 3%;
     font-weight: 300 !important;
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
     display: flex;
     justify-content: center;
     color: black;
@@ -80,7 +82,6 @@
   .button_active_2 {
     height: 45px;
     width: 250px;
-    margin-top: 2%;
     border:1px solid #85cb33 !important;
     background-color: transparent;
     color: #85cb33;
@@ -97,6 +98,7 @@
   }
   .button
   {
+    margin-top: 3%;
     display: flex;
     justify-content: center;
   }

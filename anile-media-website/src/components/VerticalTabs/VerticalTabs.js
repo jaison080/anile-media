@@ -48,7 +48,7 @@ export default function VerticalTabs() {
 
   return (
     <Box
-      sx={{ display: 'flex',marginTop:'50px'}}
+      className={styles.box}
     >
       <Tabs
         orientation="vertical"
@@ -56,7 +56,7 @@ export default function VerticalTabs() {
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'gray' }}
+        className={styles.tabs}
       >
         <Tab className={styles.tab} label="CREATIVE" {...a11yProps(0)} />
         <Tab className={styles.tab} label="MEDIA" {...a11yProps(1)} />

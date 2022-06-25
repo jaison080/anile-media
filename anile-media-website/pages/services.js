@@ -1,12 +1,10 @@
 import Head from "next/head";
+import Link from "next/link";
 import Navbar from "src/components/Navbar/Navbar";
 import ServiceCard from "src/components/Service/ServiceCard";
 import styles from '../src/components/css/services.module.css'
 function Services()
 {
-    function formPage() {
-        Router.push('/form')
-      }
     return(
         <div>
             <Head>
@@ -20,14 +18,18 @@ function Services()
             <br/>
             <div className={styles.start_title}>ALREADY KNOW WHAT YOU NEED?</div>
             <div className={styles.button}>
-            <button className={styles.button_active_1} onClick={formPage}>START A PROJECT</button>
+            <Link href="/form">
+            <button className={styles.button_active_1} >START A PROJECT</button>
+            </Link>
             </div> 
             <div className={styles.row_card_1}>
                <ServiceCard/>
             </div>
             <div className={styles.start_title_1}>What are you waiting for?</div>
             <div className={styles.button}>
-            <button className={styles.button_active_2} onClick={formPage}>LET'S START A PROJECT</button>
+            <Link href="/form">
+            <button className={styles.button_active_2} >LET'S START A PROJECT</button>
+            </Link>
             </div> 
             </div>
       </main>
