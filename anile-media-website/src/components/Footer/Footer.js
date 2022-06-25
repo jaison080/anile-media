@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.css'
 function Footer()
 {
@@ -60,7 +61,7 @@ function Footer()
       <div class={styles.bottom_text}>
         <span class={styles.copyright_text}>Copyright © 2022 <a href="/">Anile Media.</a></span>
         <span class={styles.policy_terms}>
-          <a href="https://anilemedia.netlify.app/posts/RXFrfPqIuhHAxx7wPV9L">Privacy Policy</a>
+          <Link href="/privacy">Privacy Policy</Link>
           
         </span>
       </div>
