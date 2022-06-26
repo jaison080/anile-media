@@ -1,12 +1,14 @@
 .postspage
 {
   font-family: var(--primary-font);
+  margin-bottom: 5%;
 }
 .h1
 {
     font-size:3em;
     font-weight: bolder;
     display: flex;
+    text-align: center;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -22,9 +24,14 @@ justify-content: center;
 margin-top: 20px;
 margin-bottom: 20px;
 }
-.p
+.postspage p
 {
-    line-height: 40px;
+    margin-top: 10px;
+    line-height: 35px;
     justify-content: center;
     align-items: center;
+}
+.postspage li
+{
+  line-height: 35px;
 }
