@@ -1,6 +1,7 @@
 .blog_card {
     width: 75%;
     height: 100%;
+    font-family: var(--primary-font) !important;
   }
   .blog_card:hover {
     transform: scale(0.95);
