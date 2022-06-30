@@ -4,12 +4,11 @@ const TeamData=
         id:1,
         name:"Havan Sharma",
         description:" Co-Founder , Marketing Strategist",
-        image:avatar,
-        
+        image:"",
     },
     {
         id:2,
-        image:avatar,
+        image:"",
         name:"Sarvesh Pal",
         description:"Co-Founder , Business Strategist",
     },
