@@ -21,6 +21,9 @@ const Navbar = () => {
   function formPage() {
     Router.push('/form')
   }
+  function teamPage() {
+    Router.push('/team')
+  }
   function blogPage() {
     Router.push('/blogs')
   }
@@ -94,7 +97,7 @@ const Navbar = () => {
             </Button>
             <Button className={styles.company_button} onClick={blogPage} >About
             </Button>
-            <Button className={styles.company_button} onClick={blogPage} >Work
+            <Button className={styles.company_button} onClick={teamPage} >Team
             </Button>
             <Button className={styles.company_button} onClick={servicesPage} >Solutions
             </Button>
@@ -152,7 +155,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={blogPage} className={styles.company_button}>ABOUT
               </MenuItem>
-              <MenuItem onClick={blogPage} className={styles.company_button}>WORK
+              <MenuItem onClick={teamPage} className={styles.company_button}>TEAM
               </MenuItem>
               <MenuItem onClick={servicesPage} className={styles.company_button} >SOLUTIONS
               </MenuItem>

@@ -6,24 +6,35 @@
   
   .appbar {
     background: var(--text-card) !important;
+    font-family: var(--primary-font) !important;
     box-shadow: none !important;
   }
   
   .company_button {
-    color: #85cb33 !important;
+    color: black !important;
     font-weight: 700 !important;
     font-size: 14px !important;
     font-family: var(--primary-font) !important;
   }
+  .company_button:hover{
+    text-decoration: underline;
+    background-color: rgb(255, 217, 0);
+  }
   .company {
     font-family: var(--primary-font) !important;
+    color: black;
+    font-size:x-large;
+    border-radius: 10px;
+  }
+  .company:hover{
+    text-decoration: underline;
   }
   .button_active_1 {
     height: 45px;
     width: 150px;
     margin-left: 60px;
-    background-color: #85cb33;
-    color: var(--text-card);
+    color: white;
+    background-color: black;
     cursor: pointer;
     border-radius: 40px;
     font-weight: 700;
@@ -31,7 +42,10 @@
     font-family: var(--primary-font);
   }
   .button_active_1:hover {
-    background-color: #79bb2d;
+  
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
   }
   @media (max-width: 700px) {
     .button_active_1

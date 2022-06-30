@@ -23,9 +23,9 @@
     height: 40px;
     border-radius: 40px;
     width: 100px;
-    background-color: #ffffff;
-    border: #85cb33 1px solid;
-    color: #85cb33;
+    background-color: black;
+    border: black;
+    color: white;
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
@@ -48,7 +48,8 @@
     justify-content: center;
   }
   .btn:hover {
-    background-color: #85cb33 ;
-    color: #fff;
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
   }
     
