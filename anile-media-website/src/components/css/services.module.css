@@ -40,8 +40,8 @@
   .button_active_1 {
     height: 45px;
     width: 150px;
-    background-color: #85cb33;
-    color: var(--text-card);
+    color: white;
+    background-color: black;
     cursor: pointer;
     border-radius: 40px;
     font-weight: 700;
@@ -49,7 +49,9 @@
     font-family: var(--primary-font);
   }
   .button_active_1:hover {
-    background-color: #79bb2d;
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
   }
   .button
   {
@@ -82,9 +84,9 @@
   .button_active_2 {
     height: 45px;
     width: 250px;
-    border:1px solid #85cb33 !important;
-    background-color: transparent;
-    color: #85cb33;
+    border:1px solid black !important;
+    background-color: black;
+    color: white;
     cursor: pointer;
     border-radius: 40px;
     font-weight: 700;
@@ -92,9 +94,11 @@
     font-family: var(--primary-font);
   }
   .button_active_2:hover {
-    background-color: #79bb2d;
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
     transition: 0.5s;
-    color: white;
+    border:none !important;
   }
   .button
   {

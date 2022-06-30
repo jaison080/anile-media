@@ -33,14 +33,19 @@
   .button_active {
     height: 60px;
     width: 150px;
-    background-color: #85cb33;
+    color: white;
+    background-color: black;
     border: none;
-    color: #ffffff;
     cursor: pointer;
     font-weight: 700;
     font-family: var(--primary-font);
   }
-  
+  .button_active:hover
+  {
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
+  }
   
   .button {
     height: 60px;
@@ -83,9 +88,9 @@
     margin-top: 30px;
     border-radius: 40px;
     width: 100px;
-    background-color: #ffffff;
-    border: #85cb33 1px solid;
-    color: #85cb33;
+    color: white;
+    background-color: black;
+    border: black;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -97,8 +102,9 @@
   }
   
   .submit:hover {
-    background-color: #85cb33;
-    color: #fff;
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(255, 217, 0);
   }
   .detailslabel
   {
