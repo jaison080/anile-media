@@ -7,7 +7,7 @@ function Team()
     return(
         <div>
             <Head>
-        <title>Anile Media | Privacy Policy</title>
+        <title>Anile Media | Team</title>
       </Head>
       <Navbar/>
       <main>
