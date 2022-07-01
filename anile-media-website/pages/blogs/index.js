@@ -42,7 +42,7 @@ return(
     {posts.map(post => (
         
     <div className={styles.blog_card}>
-        <HomeCard  post={post} loading = {loading} authorIsUser = {0} />
+        <HomeCard  post={post} loading = {loading} className={styles.card} authorIsUser = {0} />
         <br/>
         <br/>
         </div>

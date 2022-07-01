@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
 import {useRouter} from 'next/router';
+import styles from './cards.module.css'
 
 export default function HomeCard(props) {
     const router = useRouter();
@@ -77,14 +78,14 @@ export default function HomeCard(props) {
         router.push(`/posts/${props.post.id}`);
     }}>
         <CardContent >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" className={styles.title} component="div">
             {props.post.title}
           </Typography>
-          <Typography gutterBottom variant="body3" component="div">
+          <Typography gutterBottom className={styles.author} component="div">
             {props.post.author}
           </Typography>
           <div style={{overflow: "hidden", textOverflow: "ellipsis", maxHeight: "150px"}}> 
-          <Typography  variant="body2" color="text.secondary"  gutterBottom =  {true}>
+          <Typography color="text.secondary" className={styles.content} gutterBottom =  {true}>
           <div dangerouslySetInnerHTML={{__html: props.post.content}} />
           </Typography>
           
