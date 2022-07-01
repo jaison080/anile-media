@@ -1,0 +1,14 @@
+.title
+{
+    font-weight: 700;
+}
+.author
+{
+    font-weight: 500;
+    font-size: medium;
+}
+.content
+{
+    line-height: 30px;
+    color: black;
+}
