@@ -1,19 +1,17 @@
 .contact_main{
-    margin-top: 5%;
+  justify-content: center;
     width: 100%;
-    height: 270px;
+    height: 300px;
     background-color:rgb(255, 217, 0) ;
-    display: flexbox;
   }
   .contact_1 {
     font-family: var(--primary-font);
     font-weight: 800;
+    padding-bottom: 8%;
     font-size: 55px;
     display: flex;
     color:black;
     justify-content: center;
-    margin-top: 2%;
-    line-height: 40px;
     cursor: pointer;
     text-decoration: underline;
   }

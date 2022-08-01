@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,11 +12,12 @@ import MenuItem from '@mui/material/MenuItem';
 import { Modal } from '@mui/material';
 import { useRouter } from 'next/router';
 import styles from './Navbar.module.css'
+import Image from 'next/image';
 
 
 const pages = ['Customer Stories', 'About', 'Work', 'Solutions'];
 
-const Navbar = () => {
+const Navbar = (props) => {
   const Router = useRouter();
   function formPage() {
     Router.push('/form')
@@ -51,16 +52,28 @@ const Navbar = () => {
     height: 400,
     p: 4,
   };
-
+  const [colorChange, setColorchange] = React.useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  React.useEffect(() => {
+  window.addEventListener('scroll', changeNavbarColor);},[])
   return (
-    <AppBar position="sticky" className={styles.appbar}>
+    <Fragment>
+    <AppBar position="sticky" className={colorChange ? styles.appbar_color : styles.appbar}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
+          <img src="https://raw.githubusercontent.com/jaisondennis080/anile-media/main/anile-media-website/src/assets/logo.png" height="40" width="40" alt="logo" />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            className={styles.company}
+            className={colorChange ? styles.company : styles.company_color}
             href="/"
             sx={{
               mr: 2,
@@ -79,7 +92,7 @@ const Navbar = () => {
             variant="h7"
             noWrap
             component="a"
-            className={styles.company}
+            className={colorChange ? styles.company : styles.company_color}
             href="/"
             sx={{
               mr: 2,
@@ -93,15 +106,15 @@ const Navbar = () => {
             ANILE MEDIA
           </Typography>
           <Box className={styles.box_1} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', }}>
-            <Button className={styles.company_button} onClick={blogPage} >EXPERIENCES
+            <Button className={colorChange ? styles.company_button : styles.company_button_color} onClick={blogPage} >EXPERIENCES
             </Button>
-            <Button className={styles.company_button} onClick={blogPage} >About
+            <Button className={colorChange ? styles.company_button : styles.company_button_color} onClick={blogPage} >About
             </Button>
-            <Button className={styles.company_button} onClick={teamPage} >Team
+            <Button className={colorChange ? styles.company_button : styles.company_button_color} onClick={teamPage} >Team
             </Button>
-            <Button className={styles.company_button} onClick={servicesPage} >Solutions
+            <Button className={colorChange ? styles.company_button : styles.company_button_color} onClick={servicesPage} >Solutions
             </Button>
-            <Button className={styles.company_button} onClick={handleOpen}>CONTACT </Button>
+            <Button className={colorChange ? styles.company_button : styles.company_button_color} onClick={handleOpen}>CONTACT </Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -120,7 +133,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0, background: 'none' }}>
             
 
-            <button className={styles.button_active_1} onClick={formPage}>START A PROJECT</button>
+            <button className={colorChange ? styles.button_active_1 : styles.button_active_1_color} onClick={formPage}>START A PROJECT</button>
 
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
@@ -168,6 +181,7 @@ const Navbar = () => {
         </Toolbar>
       </Container>
     </AppBar >
+    </Fragment>
   );
 };
 export default Navbar;
