@@ -84,7 +84,6 @@ const Navbar = (props) => {
 
             }}
           >
-            ANILE MEDIA
           </Typography>
 
 
