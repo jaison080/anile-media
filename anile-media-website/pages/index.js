@@ -22,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
       </Head>
+      <React.Fragment>
       <Navbar />
       <main>
       <Cookies/>
@@ -34,7 +35,9 @@ export default function Home() {
         <VerticalTabs/>
         <Contact />
         <Footer />
+        
       </main>
+      </React.Fragment>
     </div >
   )
 }
